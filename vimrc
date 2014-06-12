@@ -134,6 +134,6 @@ endfunction
 
 function! s:Add_header()
 	let name = substitute(toupper(expand("%:t")), "\\.", "_", "g")
-	execute "normal! Go" . '#ifndef '. name . "\n". '# define ' . name . "\n". "\n\n\n". '#endif /* !' . name . ' */'
+	execute "normal! Go" . '#ifndef '. name . "\n". '# define ' . name . "\n". "\n\n\n". '#endif'
 	execute "17"
 endfunction
